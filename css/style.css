@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(
+		to top right,
+		hsl(240, 73%, 65%),
+		hsl(273, 75%, 66%)
+	);
+	font-family: 'Kumbh Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.card {
+	background: #f1f1f1;
+	border-radius: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4rem;
+	color: hsl(238, 29%, 16%);
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+	width: 50%;
+}
+
+.image-1 {
+	position: absolute;
+	left: 15%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.image-2 {
+	z-index: 10;
+	position: absolute;
+	left: -10%;
+	top: 40%;
+}
+
+.card-questions {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	font-size: 0.85rem;
+	margin-right: 3rem;
+	width: 50%;
+}
+
+.card-questions h1 {
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.card-questions .question {
+	color: hsl(240, 6%, 50%);
+	cursor: pointer;
+	margin: 0.75rem 0;
+	padding: 0.75rem 0;
+	border-bottom: 2px solid hsl(240, 5%, 91%);
+	transition: all 0.5s;
+}
+
+.question {
+	display: flex;
+	justify-content: space-between;
+}
+
+.question p {
+	display: inline;
+	margin-right: 4rem;
+	font-weight: 400;
+}
+
+.answer {
+	color: black;
+	margin: 1.5rem 0;
+	padding: 0.75rem 0;
+	display: none;
+}
+
+.active {
+	display: block;
+}
